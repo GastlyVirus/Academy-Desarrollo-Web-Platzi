@@ -9,12 +9,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet" />
   <link rel="icon" href="Imagen/iconWatch.ico" />
-  <title>Reloj</title>
+  <title>Reloj Digital</title>
 </head>
 
 <body>
-  <div class="box">
-    <h2>TIME</h2>
+  <div class="boxContainer">
+    <h1>Reloj Digital</h1>
+    <div id="relojDigital"></div>
+    <h2>Alarmas</h2>
+    <div id="listaDeAlarmas"></div>
+    <form>
+      <label for="hour">Hora:</label>
+      <input type="number" name="hour" id="hour" min="0" max="23" value="0">
+      <label for="minute">Minutos:</label>
+      <input type="number" name="minute" id="minute" min="0" max="59" value="0">
+      <label for="second">Segundos:</label>
+      <input type="number" name="second" id="second" min="0" max="59" value="0">
+      <div>
+        <input type="button" value="Agregar Alarma">
+      </div>
+    </form>
   </div>
 </body>
 
