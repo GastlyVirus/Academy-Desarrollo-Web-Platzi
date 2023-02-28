@@ -1,0 +1,33 @@
+Para entender un poco más el uso de condicionales, resolvamos los siguientes problemas, de esta manera identificarás cómo utilizarlos.
+
+<!-- Algoritmo de mayoría de edad -->
+En un algoritmo para comprobar si tienes la mayoría de edad para conducir un vehículo, necesitas las siguientes variables:
+
+edad: para comparar si cumple o no con la mayoría de edad. Esta variable no tiene un valor fijo, depende del valor de un usuario.
+mayor: contiene la edad a comparar. Esta variable es fija, según el problema.
+
+Este algoritmo es similar a preguntar: ¿Es mayor de edad? En caso de que sea Sí (verdadero) realiza una serie de acciones, caso contrario (else) realiza otras dependiendo del problema.
+
+edad -> _
+mayor -> 18
+
+if (edad >= mayor)
+    "Puedes conducir"
+else
+    "No puedes conducir"
+
+<!-- Algoritmo de semáforo -->
+En un algoritmo de semáforo, dependiendo del valor de una variable color, se evaluará un determinado bloque de código.
+El condicional switch evaluará la variable color y según sea el caso, ejecutará determinadas acciones.
+
+color -> _
+
+switch (color)
+    case "verde"
+      "¡Sigue!"
+    case "amarillo"
+      "¡Detente!"
+    case "rojo"
+      "¡No puedes avanzar!"
+    default
+      "¡No reconozco ese color! :("

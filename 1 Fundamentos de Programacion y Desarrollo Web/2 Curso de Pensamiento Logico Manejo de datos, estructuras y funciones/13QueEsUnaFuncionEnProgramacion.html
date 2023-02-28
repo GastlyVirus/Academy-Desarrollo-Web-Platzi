@@ -1,0 +1,45 @@
+Una función es un bloque de instrucciones que hacen una actividad específica y pueden ser reutilizadas.
+
+<!-- Cómo definir una función -->
+La declaración o definición de una función está constituido por las siguientes partes:
+
+La palabra reservada function para especificar que es una función, esto puede variar dependiendo el lenguaje de programación.
+El nombre de la función, que representa la acción que resuelve.
+Los parámetros están envueltas en paréntesis (), son variables propias de la función y deberán utilizarse en el contenido. Son opcionales, es decir, puede existir 0 hasta infinitos parámetros.
+El valor retornado es un único valor que devuelve la función cuando es invocada. Se lo especifica por la palabra reservada return.
+
+function nombre (argumentos)
+    "Bloque de código"
+    return valor
+
+    Por ejemplo, definamos la función suma, que a partir de dos parámetros a y b, retorna el valor de la suma.
+
+function suma ( a, b )
+    suma = a + b
+    return suma
+
+De esta manera, definimos la lógica de la función, pero no la estamos utilizando. Para generar los valores es necesario invocar la función en el código según sea necesario.
+
+<!-- Cómo invocar una función -->
+La invocación o llamada es la manera que utilizamos las funciones para utilizar el valor de retorno (return) según ciertos argumentos.
+
+La invocación de la función está constituida por dos componentes:
+
+El nombre de la función especificada en la declaración.
+Los argumentos, son los valores para cada uno de parámetros de la función envueltos entre paréntesis.
+
+nombre(argumentos)
+
+La invocación sirve para utilizar una función con diferentes argumentos.
+
+resultado1 = suma(2,3)
+resultado2 = suma(4,6)
+resultado3 = suma(10,12)
+
+Mostrar resultado1
+Mostrar resultado2
+Mostrar resultado3
+
+También existen funciones que simplemente se invocan, porque la lógica no devuelve un valor en el return.
+
+Mostrar saludar()

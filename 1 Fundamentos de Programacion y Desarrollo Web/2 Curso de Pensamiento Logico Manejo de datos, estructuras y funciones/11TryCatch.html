@@ -1,0 +1,42 @@
+La estructura de control try / catch evalúa si un algoritmo contiene errores, para que el flujo del programa no colapse. Dependiendo del lenguaje, puede cambiar su nombre, pero el concepto será el mismo.
+
+<!-- Qué sucede si existe un error en en algoritmo -->
+Recordarás que un algoritmo es una serie de pasos para resolver un problema, sin embargo, estas soluciones no son perfectas, por lo que pueden ocasionar fallos en el programa.
+
+Suponiendo que tenemos el siguiente programa:
+
+"Línea 1"
+"Línea 2"
+"Línea 3"
+"Línea 4"
+"Final del programa"
+
+Los programas evalúan línea por línea el código, si no ocurre ningún problema, se ejecutarán todas hasta el final del programa. Sin embargo, si ocurre un error en determinado lugar, el programa se detendrá. Por lo tanto, las líneas que se encuentren después del problema, no serán ejecutadas.
+
+"Línea 1"
+"Línea 2"
+ERROR
+
+La forma de solucionar esto, es con la estructura try/catch.
+
+<!-- Cómo utilizar la estructura try / catch -->
+Envolvemos en el bloque try las líneas de código que podrían provocar un problema, y en caso de que exista un error lo manejaremos en el bloque catch.
+
+"Línea 1"
+"Línea 2"
+try
+    "Línea 3"
+catch
+    Mostrar "Algo salió mal..."
+"Línea 4"
+"Final del programa"
+
+En el caso de que exista un error, el programa ejecutará una serie de sentencias alternativas, sin detener la ejecución de las demás líneas del código.
+
+"Línea 1"
+"Línea 2"
+"Algo salió mal..."
+"Línea 4"
+"Final del programa"
+
+Esta estructura es similar a un condicional if-else, pero únicamente con errores.

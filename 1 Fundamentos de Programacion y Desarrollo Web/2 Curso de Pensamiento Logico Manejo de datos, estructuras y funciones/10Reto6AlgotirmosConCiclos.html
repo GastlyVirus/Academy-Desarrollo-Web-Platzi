@@ -1,0 +1,69 @@
+Para entender un poco más el uso de ciclos, resolvamos los siguientes problemas, de esta manera identificarás cómo utilizarlos.
+
+<!-- Algoritmo de generación de números con el ciclo for -->
+El algoritmo consiste en generar los números del 1 al 10, utilizamos un bucle for porque conocemos el número de ciclos para resolver el problema.
+
+Para realizar un bucle for necesitaremos lo siguiente:
+
+Inicio: inicializamos una variable con el valor de 1, generalmente se utiliza i (índice) como variable para el bucle, pero no es obligatorio. En este caso utilizaremos num.
+Condición: la condición será mientras sea menor o igual que 10 (num <= 10).
+Pasos: debemos aumentar la variable en una unidad, por lo tanto, podemos utilizar num = num +1.
+
+La estructura es la siguiente:
+
+for (num = 1; num <= 10; num = num + 1) 
+    Mostrar num
+
+Esto se leería como: "Para (for) la variable num que inicia en 1 (num = 1) mientras sea menor o igual que 10 (num <= 10) en pasos de 1 (num = num + 1) muestra la variable num".
+
+Mira la siguiente tabla que muestra cómo cambia la variable num en cada ciclo.
+
+# Ciclo   num   num <= 10   num + 1
+1.º	      1	    true	    2
+2.º	      2	    true	    3
+…	      …	    …	        …
+10.º	  10	true	    11
+11.º	  11	false	    Termina el bucle
+
+Ten en cuenta que el aumento de la variable num ocurre al final de cada ciclo, este valor se compara con la condición. Al momento que la variable num no cumple con la condición del for (num <= 10), termina el bucle y sigue con las siguientes líneas del algoritmo correspondiente.
+
+<!-- Algoritmo de control de variables con el bucle while -->
+El siguiente algoritmo consiste en controlar que un usuario ingrese una edad mayor de 18. Entonces utilizamos while debido a que no conocemos cuántas veces se equivocará el usuario.
+
+Se utiliza la condición contraria a la solicitada, porque es lo que controlaremos, al cambiar la variable edad evitamos el ciclo infinito.
+
+Si cumple con la condición del while, volveremos a solicitar un valor correcto de edad.
+
+"Ingrese su edad"
+edad = __
+
+while edad < 18
+  "Ingrese un valor correcto: "
+  edad = __
+
+Mira la siguiente tabla que muestra cómo cambia la variable edad en cada ciclo.
+
+# Ciclo   edad   edad < 18   Nueva edad
+1.º	      9	     true	     15
+2.º	      15	 true	     21
+3.º	      21	 false	     Termina el bucle
+
+<!-- Algoritmo de control de variables con el bucle do-while -->
+El mismo ejemplo del ciclo while, sin embargo, no iniciamos una variable edad fuera del ciclo. Con el ciclo do-while realizamos un bloque de código y preguntamos una condición, si es verdadera, repite el código.
+
+Se utiliza la condición contraria a la solicitada, porque es lo que controlaremos, al cambiar la variable edad evitamos el ciclo infinito.
+
+Si cumple con la condición del while, volveremos a solicitar un valor correcto de edad.
+
+do
+    "Ingrese su edad"
+    edad = __
+while edad < 18
+
+Mira la siguiente tabla que muestra cómo cambia la variable edad en cada ciclo.
+
+# Ciclo   edad   edad < 18   Estado
+do	      11	 true	     Repite el do
+1.º	      9	     true	     Repite el do
+2.º	      15	 true	     Repite el do
+3.º	      21	 false	     Termina el bucle

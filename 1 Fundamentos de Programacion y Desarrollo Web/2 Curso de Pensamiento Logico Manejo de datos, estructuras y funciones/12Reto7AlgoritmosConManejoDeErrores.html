@@ -1,0 +1,59 @@
+Reto 7: algoritmos con manejo de errores
+Para entender un poco más el uso de la estructura try / catch, resolvamos el siguiente problema, de esta manera identificarás cómo utilizarlos.
+
+<!-- Cómo manejar errores con try/catch -->
+El algoritmo consiste en dividir dos números. Para esto necesitaremos dos números ingresados por el usuario y realizaremos dicha operación.
+
+"Inicio del programa"
+numero1 = _
+numero2 = _
+
+"El resultado es: "
+resultado = numero1 / numero2
+Mostrar resultado
+"Fin del programa"
+
+Nuestro programa funciona correctamente si ingresamos cualquier número.
+
+"Inicio del programa"
+numero1 = 10
+numero2 = 2
+
+"El resultado es: "
+5
+"Fin del programa"
+
+Sin embargo… ¿Qué sucedería si colocamos que numero2 sea igual a 0?
+
+"Inicio del programa"
+numero1 = 10
+numero2 = 0
+
+"El resultado es: "
+ERROR
+
+¡No puede ser! Nuestro programa colapsó porque no existe la división entre 0. Intentemos resolverlo con la ayuda de try / catch. Si existe un error mostraremos un mensaje.
+
+"Inicio del programa"
+numero1 = _
+numero2 = _
+
+try
+    "El resultado es: "
+    resultado = numero1 / numero2   
+    Mostrar resultado
+catch
+    Mostrar "No existe división entre 0"
+
+"Fin del programa"
+
+Ahora comprobemos el algoritmo:
+
+"Inicio del programa"
+numero1 = 10
+numero2 = 0
+
+"No existe división entre 0"
+"Fin del programa"
+
+Ahora nuestro programa no colapsa si existe un error.
