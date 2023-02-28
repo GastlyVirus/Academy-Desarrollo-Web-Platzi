@@ -2,21 +2,25 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
+  background-color: black;
 }
 
-.cajaContenedora{
-  width: 40%;
-  max-width: 600px;
-  background-color: aqua;
+.relojContainer {
+  font-size: 10rem;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: relojContainer 1s ease-in-out infinite alternate;
+  -moz-animation: relojContainer 1s ease-in-out infinite alternate;
+  animation: relojContainer 1s ease-in-out infinite alternate;
 }
 
-.cajaReloj{
-  width: 50%;
-  background-color: red;
-}
-
-.cajaReloj p {
-  display: inline-block;
-  line-height: 2em;
+@-webkit-keyframes relojContainer {
+  from {
+    text-shadow: 0 0 5px #ffffffcb, 0 0 10px #fff, 0 0 10px #e60073, 0 0 20px #e60073,
+      0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+  }
+  to {
+    text-shadow: 0 0 10px #ffffffcb, 0 0 10px #ff4da6, 0 0 20px #ff4da6,
+      0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6;
+  }
 }
