@@ -1,52 +1,22 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: black;
+.cajaContenedora{
+  width: 40%;
+  max-width: 600px;
+  background-color: aqua;
 }
 
-.boxContainer {
-  position: relative;
-  width: 500px;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background: white; */
-  overflow: hidden;
-  border-radius: 20px;
+.cajaReloj{
+  width: 50%;
+  background-color: red;
 }
 
-.boxContainer::before {
-  content: "";
-  position: absolute;
-  width: 300px;
-  height: 180%;
-  background: linear-gradient(rgb(255, 102, 0), rgb(255, 102, 0));
-  animation: animate 3s linear infinite;
-}
-
-.boxContainer::after {
-  content: "";
-  position: absolute;
-  background: black;
-  inset: 8px;
-  border-radius: 15px;
-}
-
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.cajaReloj p {
+  display: inline-block;
+  line-height: 2em;
 }

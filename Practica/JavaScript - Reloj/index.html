@@ -5,31 +5,37 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="Imagen/iconWatch.ico" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet" />
-  <link rel="icon" href="Imagen/iconWatch.ico" />
   <title>Reloj Digital</title>
 </head>
 
 <body>
-  <div class="boxContainer">
-    <h1>Reloj Digital</h1>
-    <div id="relojDigital"></div>
-    <h2>Alarmas</h2>
-    <div id="listaDeAlarmas"></div>
-    <form>
-      <label for="hour">Hora:</label>
-      <input type="number" name="hour" id="hour" min="0" max="23" value="0">
-      <label for="minute">Minutos:</label>
-      <input type="number" name="minute" id="minute" min="0" max="59" value="0">
-      <label for="second">Segundos:</label>
-      <input type="number" name="second" id="second" min="0" max="59" value="0">
-      <div>
-        <input type="button" value="Agregar Alarma">
+  <div class="cajaContenedora">
+    <div class="cajaReloj">
+      <div class="fechaReloj">
+        <p id="diaSemana" class="diaSemana">Martes</p>
+        <p id="dia" class="dia">02</p>
+        <p>de</p>
+        <p id="mes" class="mes">Febrero</p>
+        <p>del</p>
+        <p id="annio" class="annio">2023</p>
       </div>
-    </form>
+      <div class="tiempoReloj">
+        <p id="horas" class="horas">16</p>
+        <p>:</p>
+        <p id="minutos" class="minutos">22</p>
+        <p>:</p>
+        <div class="cajaSegundos">
+          <p id="segundos" class="segundos">45</p>
+          <p id="ampm" class="ampm">pm</p>
+        </div>
+      </div>
+    </div>
   </div>
+  <script src="main.js"></script>
 </body>
 
 </html>
