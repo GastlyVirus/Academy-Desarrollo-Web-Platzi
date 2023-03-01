@@ -14,7 +14,7 @@
   animation: relojContainer 2s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes relojContainer {
+@keyframes relojContainer {
   from {
     text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #c8ff00, 0 0 10px #c8ff00,
       0 0 15px #c8ff00, 0 0 20px #c8ff00, 0 0 25px #c8ff00;
