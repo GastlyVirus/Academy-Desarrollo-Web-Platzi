@@ -11,16 +11,16 @@
   text-align: center;
   -webkit-animation: relojContainer 1s ease-in-out infinite alternate;
   -moz-animation: relojContainer 1s ease-in-out infinite alternate;
-  animation: relojContainer 0.5s ease-in-out infinite alternate;
+  animation: relojContainer 2s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes relojContainer {
   from {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #ff5100, 0 0 20px #ff5100,
-      0 0 30px #ff5100, 0 0 40px #ff5100, 0 0 50px #ff5100;
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #c8ff00, 0 0 13px #c8ff00,
+      0 0 15px #c8ff00, 0 0 17px #c8ff00, 0 0 20px #c8ff00;
   }
   to {
-    text-shadow: 0 0 10px #fff, 0 0 30px #ffa600, 0 0 40px #ffa600,
-      0 0 50px #ffa600, 0 0 60px #ffa600, 0 0 70px #ffa600, 0 0 80px #ffa600;
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 30px #3cff00,
+      0 0 40px #3cff00, 0 0 50px #3cff00, 0 0 60px #3cff00, 0 0 70px #3cff00;
   }
 }
