@@ -15,82 +15,82 @@
 
 .relojContainer {
   width: 400px;
-  height: 500px;
+  height: 150px;
   border-radius: 25px;
-  border: 1px solid rgb(255, 255, 0);
-  animation: borderanimation 1.5s ease-in-out infinite alternate;
+  border: 1px solid #ffffff;
+  animation: borderanimation 2s ease-in-out infinite alternate;
 }
 
 @keyframes borderanimation {
   from {
-    box-shadow: 0 0 0.5px #3cff00, 0 0 1px #3cff00, 0 0 2px #3cff00, 0 0 3px #3cff00,
-      0 0 4px #3cff00, 0 0 5px #3cff00, 0 0 6px #3cff00;
+    box-shadow: 0 0 0.5px #fbff00, 0 0 1px #fbff00, 0 0 2px #fbff00, 0 0 3px #fbff00,
+      0 0 4px #fbff00, 0 0 5px #fbff00, 0 0 6px #fbff00;
   }
   to {
-    box-shadow: 0 0 7px #3cff00, 0 0 10px #3cff00, 0 0 13px #3cff00, 0 0 15px #3cff00,
-      0 0 17px #3cff00, 0 0 20px #3cff00, 0 0 25px #3cff00;
+    box-shadow: 0 0 7px #9dff00, 0 0 10px #9dff00, 0 0 13px #9dff00, 0 0 15px #9dff00,
+      0 0 17px #9dff00, 0 0 20px #9dff00, 0 0 25px #9dff00;
   }
 }
 
 .horarioActual{ 
   color: white;
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 70px;
   text-align: center;
-  animation: relojContainer 1.5s ease-in-out infinite alternate;
+  animation: relojContainer 1.8s ease-in-out infinite alternate;
 }
 
 @keyframes relojContainer {
   from {
-    text-shadow: 0 0 0.5px #3cff00, 0 0 1px #3cff00, 0 0 3px #3cff00, 0 0 5px #3cff00,
-    0 0 7px #3cff00, 0 0 9px #3cff00, 0 0 11px #3cff00;
+    text-shadow: 0 0 0.5px #ffffff, 0 0 1px #fbff0096, 0 0 3px #fbff0096, 0 0 5px #fbff0096,
+    0 0 7px #fbff0096, 0 0 9px #fbff0096, 0 0 11px #fbff0096;
   }
   to {
-    text-shadow: 0 0 13px #3cff00, 0 0 15px #3cff00, 0 0 17px #3cff00, 0 0 19px #3cff00,
-    0 0 21px #3cff00, 0 0 23px #3cff00, 0 0 25px #3cff00;
+    text-shadow: 0 0 13px #fbff00, 0 0 15px #fbff00, 0 0 17px #fbff00, 0 0 19px #fbff00,
+    0 0 21px #fbff00, 0 0 23px #fbff00, 0 0 25px #fbff00;
   }
 }
 
 .circulosContenedor ul li {
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   list-style: none;
   opacity: 0;
   background: radial-gradient(#3cff00, transparent, transparent);
   bottom: 0;
   left: 10vw;
-  animation: animacion 7s linear infinite;
+  animation: animacion 4s linear infinite;
 }
 
 .circulosContenedor ul li:nth-child(2) {
   left: 15vw;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 .circulosContenedor ul li:nth-child(6) {
   left: 25vw;
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 .circulosContenedor ul li:nth-child(9) {
   left: 35vw;
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 
 .circulosContenedor ul li:nth-child(5) {
   left: 45vw;
-  animation-delay: 5s;
+  animation-delay: 4s;
 }
 
 .circulosContenedor ul li:nth-child(1) {
   left: 55vw;
-  animation-delay: 4.5s;
+  animation-delay: 5s;
 }
 
 .circulosContenedor ul li:nth-child(0) {
   left: 65vw;
-  animation-delay: 3.5s;
+  animation-delay: 1.5s;
 }
 
 .circulosContenedor ul li:nth-child(3) {
@@ -100,47 +100,47 @@
 
 .circulosContenedor ul li:nth-child(7) {
   left: 85vw;
-  animation-delay: 5.5s;
+  animation-delay: 3.5s;
 }
 
 .circulosContenedor ul li:nth-child(8) {
   left: 95vw;
-  animation-delay: 1s;
+  animation-delay: 4.5s;
 }
 
 .circulosContenedor ul li:nth-child(4) {
   left: 10vw;
-  animation-delay: 1.5s;
+  animation-delay: 5.5s;
 }
 
 .circulosContenedor ul li:nth-child(10) {
   left: 87vw;
-  animation-delay: 2.3s;
+  animation-delay: 1.3s;
 }
 
 .circulosContenedor ul li:nth-child(11) {
   left: 77vw;
-  animation-delay: 3.3s;
+  animation-delay: 2.3s;
 }
 
 .circulosContenedor ul li:nth-child(12) {
   left: 67vw;
-  animation-delay: 4.3s;
+  animation-delay: 3.3s;
 }
 
 .circulosContenedor ul li:nth-child(13) {
   left: 57vw;
-  animation-delay: 5.3s;
+  animation-delay: 4.3s;
 }
 
 .circulosContenedor ul li:nth-child(14) {
   left: 7vw;
-  animation-delay: 4.3s;
+  animation-delay: 5.3s;
 }
 
 .circulosContenedor ul li:nth-child(15) {
   left: 47vw;
-  animation-delay: 3.7s;
+  animation-delay: 1.7s;
 }
 
 .circulosContenedor ul li:nth-child(16) {
@@ -150,17 +150,17 @@
 
 .circulosContenedor ul li:nth-child(17) {
   left: 27vw;
-  animation-delay: 5.7s;
+  animation-delay: 3.7s;
 }
 
 .circulosContenedor ul li:nth-child(18) {
   left: 17vw;
-  animation-delay: 1.7s;
+  animation-delay: 4.7s;
 }
 
 .circulosContenedor ul li:nth-child(19) {
   left: 20vw;
-  animation-delay: 1.3s;
+  animation-delay: 5.2s;
 }
 
 @keyframes animacion {
@@ -169,6 +169,7 @@
     opacity: 1;
     bottom: 0;
   }
+
   100% {
     transform: scale(10);
     opacity: 0;
