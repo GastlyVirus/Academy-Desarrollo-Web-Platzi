@@ -14,50 +14,63 @@
 }
 
 .relojContainer {
-  width: 400px;
-  height: 150px;
+  width: 500px;
+  height: 200px;
   border-radius: 25px;
   border: 1px solid #ffffff;
   animation: borderanimation 2s ease-in-out infinite alternate;
 }
 
-@keyframes borderanimation {
-  from {
-    box-shadow: 0 0 0.5px #fbff00, 0 0 1px #fbff00, 0 0 2px #fbff00, 0 0 3px #fbff00,
-      0 0 4px #fbff00, 0 0 5px #fbff00, 0 0 6px #fbff00;
-  }
-  to {
-    box-shadow: 0 0 7px #9dff00, 0 0 10px #9dff00, 0 0 13px #9dff00, 0 0 15px #9dff00,
-      0 0 17px #9dff00, 0 0 20px #9dff00, 0 0 25px #9dff00;
-  }
+.relojContainer h1 {
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 40px;
+  margin-top: 15px;
+  animation: relojContainer 2s ease-in-out infinite alternate;
 }
 
-.horarioActual{ 
+.horarioActual {
   color: white;
-  margin-top: 30px;
-  font-size: 70px;
+  font-size: 100px;
+  margin-top: 10px;
   text-align: center;
-  animation: relojContainer 1.8s ease-in-out infinite alternate;
+  border-radius: 25px;
+  animation: relojContainer 2s ease-in-out infinite alternate;
+}
+
+@keyframes borderanimation {
+  from {
+    box-shadow: 0 0 1px #fbff00, 0 0 2px #fbff00, 0 0 3px #fbff00,
+      0 0 4px #fbff00, 0 0 5px #fbff00, 0 0 6px #fbff00, 0 0 7px #fbff00;
+  }
+  to {
+    box-shadow: 0 0 8px #9dff00, 0 0 10px #9dff00, 0 0 12px #9dff00,
+      0 0 14px #9dff00, 0 0 16px #9dff00, 0 0 18px #9dff00, 0 0 20px #9dff00;
+  }
 }
 
 @keyframes relojContainer {
   from {
-    text-shadow: 0 0 0.5px #ffffff, 0 0 1px #fbff0096, 0 0 3px #fbff0096, 0 0 5px #fbff0096,
-    0 0 7px #fbff0096, 0 0 9px #fbff0096, 0 0 11px #fbff0096;
+    text-shadow: 0 0 1px #ffffff, 0 0 3px #fbff0096, 0 0 4px #fbff0096,
+      0 0 5px #fbff0096, 0 0 6px #fbff0096, 0 0 7px #fbff0096, 0 0 8px #fbff0096;
   }
   to {
-    text-shadow: 0 0 13px #fbff00, 0 0 15px #fbff00, 0 0 17px #fbff00, 0 0 19px #fbff00,
-    0 0 21px #fbff00, 0 0 23px #fbff00, 0 0 25px #fbff00;
+    text-shadow: 0 0 9px #fbff00, 0 0 10px #fbff00, 0 0 11px #fbff00,
+      0 0 12px #fbff00, 0 0 13px #fbff00, 0 0 14px #fbff00, 0 0 15px #fbff00;
   }
 }
 
+
+
+/*----------------------------Effect Background----------------------------*/
 .circulosContenedor ul li {
   position: absolute;
   width: 10px;
   height: 10px;
   list-style: none;
   opacity: 0;
-  background: radial-gradient(#3cff00, transparent, transparent);
+  background: radial-gradient(#9dff00, transparent, transparent);
   bottom: 0;
   left: 10vw;
   animation: animacion 4s linear infinite;
