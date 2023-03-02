@@ -204,6 +204,10 @@ body {
 /*----------------------------Celular----------------------------*/
 @media screen and (max-width: 530px){
 
+  body {
+    overflow: hidden;
+  }
+
   .relojContainer {
     width: 300px;
     height: 130px;
@@ -234,6 +238,10 @@ body {
 
 /*----------------------------Tablets----------------------------*/
 @media screen and (min-width: 531px) and (max-width: 768px){
+
+  body {
+    overflow: hidden;
+  }
 
   .relojContainer {
     width: 500px;
