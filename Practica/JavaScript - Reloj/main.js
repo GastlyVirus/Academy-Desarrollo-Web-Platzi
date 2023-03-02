@@ -28,5 +28,3 @@ setInterval(() => {
   // La propiedad "INNERHTML" obtiene el contenido html de un elemento para poder reemplazarlo
   reloj.innerHTML = `${hora}:${minutos}:${segundos}`;
 }, 1000);
-
-window.addEventListener('click', () => {document.getElementById("soundBackground").play();})

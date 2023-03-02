@@ -18,7 +18,7 @@
   height: 200px;
   border-radius: 25px;
   border: 1px solid #ffffff;
-  animation: borderanimation 2s ease-in-out infinite alternate;
+  animation: borderanimation 3s ease-in-out infinite alternate;
 }
 
 .relojContainer h1 {
@@ -27,7 +27,7 @@
   border-radius: 25px;
   font-size: 40px;
   margin-top: 15px;
-  animation: relojContainer 2s ease-in-out infinite alternate;
+  animation: relojContainer 3s ease-in-out infinite alternate;
 }
 
 .horarioActual {
@@ -36,7 +36,7 @@
   margin-top: 10px;
   text-align: center;
   border-radius: 25px;
-  animation: relojContainer 2s ease-in-out infinite alternate;
+  animation: relojContainer 3s ease-in-out infinite alternate;
 }
 
 @keyframes borderanimation {
@@ -73,7 +73,7 @@
   background: radial-gradient(#9dff00, transparent, transparent);
   bottom: 0;
   left: 10vw;
-  animation: animacion 4s linear infinite;
+  animation: animacion 3s linear infinite;
 }
 
 .circulosContenedor ul li:nth-child(2) {
