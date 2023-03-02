@@ -5,6 +5,10 @@
   background: black;
 }
 
+body {
+  overflow: hidden;
+}
+
 .primerContenedor {
   min-height: 100vh;
   display: flex;
@@ -14,9 +18,10 @@
 }
 
 .relojContainer {
-  width: 500px;
-  height: 200px;
+  width: 600px;
+  height: 300px;
   border-radius: 25px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
   border: 1px solid #ffffff;
   animation: borderanimation 3s ease-in-out infinite alternate;
 }
@@ -25,24 +30,26 @@
   color: white;
   text-align: center;
   border-radius: 25px;
-  font-size: 40px;
-  margin-top: 15px;
+  font-size: 60px;
+  margin-top: 20px;
+  background: none;
   animation: relojContainer 3s ease-in-out infinite alternate;
 }
 
 .horarioActual {
   color: white;
-  font-size: 100px;
-  margin-top: 10px;
+  font-size: 150px;
+  margin-top: 25px;
   text-align: center;
   border-radius: 25px;
+  background: none;
   animation: relojContainer 3s ease-in-out infinite alternate;
 }
 
 @keyframes borderanimation {
   from {
-    box-shadow: 0 0 1px #fbff00, 0 0 2px #fbff00, 0 0 3px #fbff00,
-      0 0 4px #fbff00, 0 0 5px #fbff00, 0 0 6px #fbff00, 0 0 7px #fbff00;
+    box-shadow: 0 0 1px #9dff00, 0 0 2px #9dff00, 0 0 3px #9dff00,
+      0 0 4px #9dff00, 0 0 5px #9dff00, 0 0 6px #9dff00, 0 0 7px #9dff00;
   }
   to {
     box-shadow: 0 0 8px #9dff00, 0 0 10px #9dff00, 0 0 12px #9dff00,
@@ -52,22 +59,23 @@
 
 @keyframes relojContainer {
   from {
-    text-shadow: 0 0 1px #ffffff, 0 0 3px #fbff0096, 0 0 4px #fbff0096,
-      0 0 5px #fbff0096, 0 0 6px #fbff0096, 0 0 7px #fbff0096, 0 0 8px #fbff0096;
+    text-shadow: 0 0 1px #9dff00, 0 0 3px #9dff00, 0 0 4px #9dff00,
+      0 0 5px #9dff00, 0 0 6px #9dff00, 0 0 7px #9dff00, 0 0 8px #9dff00;
   }
   to {
-    text-shadow: 0 0 9px #fbff00, 0 0 10px #fbff00, 0 0 11px #fbff00,
-      0 0 12px #fbff00, 0 0 13px #fbff00, 0 0 14px #fbff00, 0 0 15px #fbff00;
+    text-shadow: 0 0 9px #9dff00, 0 0 10px #9dff00, 0 0 11px #9dff00,
+      0 0 12px #9dff00, 0 0 13px #9dff00, 0 0 14px #9dff00, 0 0 15px #9dff00;
   }
 }
+
 
 
 
 /*----------------------------Effect Background----------------------------*/
 .circulosContenedor ul li {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   list-style: none;
   opacity: 0;
   background: radial-gradient(#9dff00, transparent, transparent);
@@ -187,5 +195,66 @@
     transform: scale(10);
     opacity: 0;
     bottom: 100vh;
+  }
+}
+
+
+
+
+/*----------------------------Celular----------------------------*/
+@media screen and (max-width: 530px){
+
+  .relojContainer {
+    width: 300px;
+    height: 130px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  }
+
+  .relojContainer h1 {
+    font-size: 30px;
+    background: none;
+    margin-top: 15px;
+  }
+
+  .horarioActual {
+    font-size: 50px;
+    background: none;
+    margin-bottom: auto;
+  }
+  .circulosContenedor ul li {
+    width: 5px;
+    height: 5px;
+    background: radial-gradient(#9dff00, transparent, transparent);
+    animation: animacion 4s linear infinite;
+  }
+}
+
+
+
+
+/*----------------------------Tablets----------------------------*/
+@media screen and (min-width: 531px) and (max-width: 768px){
+
+  .relojContainer {
+    width: 500px;
+    height: 230px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  }
+
+  .relojContainer h1 {
+    font-size: 50px;
+    background: none;
+    margin-top: 25px;
+  }
+
+  .horarioActual {
+    font-size: 100px;
+    background: none;
+    margin-bottom: auto;
+  }
+  .circulosContenedor ul li {
+    width: 10px;
+    height: 10px;
+    animation: animacion 4s linear infinite;
   }
 }
