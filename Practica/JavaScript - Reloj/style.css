@@ -5,40 +5,62 @@
   background: black;
 }
 
+.primerContenedor {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .relojContainer {
-  max-width: 600px;
-  max-height: 500px;
+  width: 400px;
+  height: 500px;
+  border-radius: 25px;
+  border: 1px solid rgb(255, 255, 0);
+  animation: borderanimation 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes borderanimation {
+  from {
+    box-shadow: 0 0 0.5px #3cff00, 0 0 1px #3cff00, 0 0 2px #3cff00, 0 0 3px #3cff00,
+      0 0 4px #3cff00, 0 0 5px #3cff00, 0 0 6px #3cff00;
+  }
+  to {
+    box-shadow: 0 0 7px #3cff00, 0 0 10px #3cff00, 0 0 13px #3cff00, 0 0 15px #3cff00,
+      0 0 17px #3cff00, 0 0 20px #3cff00, 0 0 25px #3cff00;
+  }
+}
+
+.horarioActual{ 
+  color: white;
+  margin-top: 20px;
+  font-size: 70px;
   text-align: center;
-  background: #fff;
-  font-size: 5rem;
-  color: #fff;
-  
-  -webkit-animation: relojContainer 1s ease-in-out infinite alternate;
-  -moz-animation: relojContainer 1s ease-in-out infinite alternate;
-  animation: relojContainer 3s ease-in-out infinite alternate;
+  animation: relojContainer 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes relojContainer {
   from {
-    text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #c8ff00, 0 0 10px #c8ff00,
-      0 0 15px #c8ff00, 0 0 20px #c8ff00, 0 0 25px #c8ff00;
+    text-shadow: 0 0 0.5px #3cff00, 0 0 1px #3cff00, 0 0 3px #3cff00, 0 0 5px #3cff00,
+    0 0 7px #3cff00, 0 0 9px #3cff00, 0 0 11px #3cff00;
   }
   to {
-    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 30px #3cff00, 0 0 45px #3cff00,
-      0 0 55px #3cff00, 0 0 65px #3cff00, 0 0 75px #3cff00;
+    text-shadow: 0 0 13px #3cff00, 0 0 15px #3cff00, 0 0 17px #3cff00, 0 0 19px #3cff00,
+    0 0 21px #3cff00, 0 0 23px #3cff00, 0 0 25px #3cff00;
   }
 }
 
 .circulosContenedor ul li {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   list-style: none;
   opacity: 0;
   background: radial-gradient(#3cff00, transparent, transparent);
   bottom: 0;
   left: 10vw;
-  animation: animacion 3s linear infinite;
+  animation: animacion 7s linear infinite;
 }
 
 .circulosContenedor ul li:nth-child(2) {
